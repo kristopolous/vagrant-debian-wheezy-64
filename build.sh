@@ -39,7 +39,7 @@ VM_GUI="${VM_GUI:-}"
 if [ "x${VM_GUI}" == "xyes" ] || [ "x${VM_GUI}" == "x1" ]; then
   STARTVM="VBoxManage startvm ${BOX}"
 else
-  STARTVM="VBoxManage startvm ${BOX} --type headless"
+  STARTVM="VBoxManage startvm ${BOX}"
 fi
 STOPVM="VBoxManage controlvm ${BOX} poweroff"
 
